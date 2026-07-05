@@ -22,4 +22,8 @@ fruits.remove("Apple")
 print(fruits)
 
 numbers=[10,12,13,14]
-print(numbers.reverse())
+numbers.reverse()  #revers the list
+print(numbers)
+remove_item=numbers.pop(0)   #remove by index
+print("Removed Item : ",remove_item)
+print(numbers)
