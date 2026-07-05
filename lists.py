@@ -44,3 +44,22 @@ for fruits in fruits:
 matrix=[[1, 2],[3,6],[0,1]]
 print(matrix)
 print("Gride 0: ",matrix[0])
+
+#simple To - do list...
+tasks=["Clean room","lab tasks","project submission"]
+print("======Current Task=========")
+for i in tasks:
+    print(i)
+
+newTask=tasks.append("DB Assignment Submission")
+print("New Task Added: ",newTask)
+print("======Current Task=========")
+for i in tasks:
+    print(i)
+remove=tasks.pop(0)
+print("One task completed : ",remove)
+print("====Updated Tasks====")
+for i in tasks:
+    print(i)
+
+print("Number of Tottal Tasks : ",len(tasks))
