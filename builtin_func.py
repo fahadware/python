@@ -16,3 +16,9 @@ word=" hello world "
 print(word.strip())
 print(word.lstrip())
 print(word.rstrip())
+#searching
+print(word.find("l"))
+print(word.count("l"))
+print(word.startswith("h"))
+print(word.isdecimal())
+
