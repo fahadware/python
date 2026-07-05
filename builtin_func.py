@@ -12,7 +12,7 @@ print(name.capitalize()) #convert 1st letter of string into capital..
 print(name.title())      #convert 1st letter of each word..
 
 #cleaning
-word=" hello world "
+word="hello world"
 print(word.strip())
 print(word.lstrip())
 print(word.rstrip())
@@ -21,4 +21,10 @@ print(word.find("l"))
 print(word.count("l"))
 print(word.startswith("h"))
 print(word.isdecimal())
+#split and join
+print(word.split("-"))
+print(word.join("-"))
 
+#replace
+newword="cat"
+print(newword.replace("c","b"))
