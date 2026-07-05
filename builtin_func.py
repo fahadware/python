@@ -4,3 +4,9 @@ print("Python builtin function....")
 #syntex
 #string.method()
 
+#first are case conversion
+name="fahad ali"
+print(name.lower())
+print(name.upper())
+print(name.capitalize()) #convert 1st letter of string into capital..
+print(name.title())      #convert 1st letter of each word..
