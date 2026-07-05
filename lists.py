@@ -22,8 +22,25 @@ fruits.remove("Apple")
 print(fruits)
 
 numbers=[10,12,13,14]
+print("Curret List : ",numbers)
 numbers.reverse()  #revers the list
-print(numbers)
+print("Reverse : " ,numbers)
 remove_item=numbers.pop(0)   #remove by index
 print("Removed Item : ",remove_item)
 print(numbers)
+numbers.sort()
+print("Sorted Numbers : ",numbers)
+
+fruits = ["apple", "banana", "cherry"]
+print("banana" in fruits)  #checking that is this element present...
+print("mango" in fruits)
+
+for fruits in fruits:
+    print(fruits)  #looping through the list...
+
+
+# This is how you'd represent something like a grid or table — very common in data analysis and AI/ML 
+# (e.g., representing images or datasets).
+matrix=[[1, 2],[3,6],[0,1]]
+print(matrix)
+print("Gride 0: ",matrix[0])
