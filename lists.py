@@ -9,7 +9,17 @@ print("Topic : :Lists")
 Names=["Fahad","Hammad","Ali"]
 print(Names[2])
 student_detail=["Fahad","Ali","Computer science",3.5,True,21]
-print("Name : ",student_detail[0])  #accessing element of list
+print("Name : ",student_detail[1])  #accessing element of list
 print(student_detail)    
 student_detail[1]="Khokhar"  #changing element at specific index...
 print(student_detail)
+
+fruits=["Apple","Banana","Gauva"]
+print(fruits)
+fruits.append("Grapes")
+print(fruits)
+fruits.remove("Apple")
+print(fruits)
+
+numbers=[10,12,13,14]
+print(numbers.reverse())
