@@ -41,17 +41,17 @@ for fruits in fruits:
 
 # This is how you'd represent something like a grid or table — very common in data analysis and AI/ML 
 # (e.g., representing images or datasets).
-matrix=[[1, 2],[3,6],[0,1]]
-print(matrix)
-print("Gride 0: ",matrix[0])
+Matrix=[[1, 2],[3,6],[0,1]]
+print(Matrix)
+print("Gride 0: ",Matrix[0])
 
 #simple To - do list...
-tasks=["Clean room","lab tasks","project submission"]
-print("======Current Task=========")
+tasks=["Clean Room","lab tasks","project submission"]
+print("======Current Tasks=========")
 for i in tasks:
     print(i)
 
-newTask=tasks.append("DB Assignment Submission")
+newTask=tasks.append("DB Assignsment Submission")
 print("New Task Added: ",newTask)
 print("======Current Task=========")
 for i in tasks:
