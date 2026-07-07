@@ -29,3 +29,15 @@ print(type(tuple))
 #modifying tuple givebttype error because tuples are not changable...
 point = (10, 20)
 point[0] = 99
+
+scores=(100,90,80)
+print(len(scores))
+print(scores.count(80))
+print(scores.index(90))
+
+#nested tuple..
+student=("Fahad",(100,90,20))
+print(student[0])
+print(student[1])
+print(student[1][0]) #it gives second element of nested tuple
+
