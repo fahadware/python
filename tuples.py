@@ -19,3 +19,13 @@ print(name)
 print(age)
 print(department)
 print(cgpa)
+
+#checking tuples...
+not_a_tuple=(5)
+tuple=(5,)
+print(type(not_a_tuple))
+print(type(tuple))
+
+#modifying tuple givebttype error because tuples are not changable...
+point = (10, 20)
+point[0] = 99
