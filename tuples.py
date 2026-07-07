@@ -15,6 +15,8 @@ coordinates[0] = 99   #  TypeError! because tuples are unchangable...
 
 std_info=("Fahad","21","CS","3.1")
 name,age,department,cgpa=std_info  #Tuple unpacking
+#Important: if a tuple contains a mutable object (like a list) inside it, that inner list can still be changed — only the tuple's own structure 
+# (what's at each position) is locked:
 print(name)
 print(age)
 print(department)
@@ -41,3 +43,13 @@ print(student[0])
 print(student[1])
 print(student[1][0]) #it gives second element of nested tuple
 
+student=("Fahad",23,"computer science",3.1)
+name,roll_no,department,gpa=student
+print('====student detail==========')
+print("Name:",name)
+print("roll no:",roll_no)
+print("department:",department)
+print("gpa:",gpa)
+
+print("Tottal fields in record:",len(student))
+print("is 'computer scient' is in record : ","computer science"in student)
