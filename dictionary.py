@@ -63,7 +63,8 @@ contact = {
 print("--- Contact Card ---")
 print("Name:", contact["name"])
 print("Phone:", contact["phone"])
-print("Email:", contact.get("email", "No email provided"))
+print("Email:", contact.get("email", "No email provided"))  #this will simply show error measge but did not crash the program
+# print("Email:", contact["email"])   #this will give error and crash the programe
 print("City:", contact["address"]["city"])
 
 contact["email"]="fahad@gmail.com"
