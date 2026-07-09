@@ -26,3 +26,23 @@ def add(a,b):
     result=a+b
     print(result)
 add(1,2)
+
+
+def power(base,exponent=2):
+    return base**exponent
+print(power(5))
+
+
+#funtion calling other function...
+def square(x):
+    return x*x
+def sum_of_square(a,b):
+    return square(a)+square(b)
+print(sum_of_square(2,2))
+
+#returning multiple value using tuple unpacking....
+def min_max(numbers):
+    return min(numbers),max(numbers)
+lowest,highest=min_max([2,4,9,1,10,0])
+print("lowest:",lowest)
+print("higest:",highest)
