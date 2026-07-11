@@ -42,3 +42,21 @@ sorted_students = sorted(students, key=lambda s: s[1])   # ✅ correct
 numbers=[20,10,30,100,35,15]
 maximum=max(numbers,key=lambda x:x)
 print(maximum)
+
+#task..
+products = [
+    {"name": "Laptop", "price": 1200},
+    {"name": "Mouse", "price": 25},
+    {"name": "Keyboard", "price": 75},
+    {"name": "Monitor", "price": 300}
+]
+
+sorted_by_price = sorted(products, key=lambda p: p["price"])
+sorted_by_name = sorted(products, key=lambda p: p["name"])
+expensive_items = list(filter(lambda p: p["price"] > 100, products))
+discounted_prices = list(map(lambda p: p["price"] * 0.9, products))
+
+print("Sorted by price:", sorted_by_price)
+print("Sorted by name:", sorted_by_name)
+print("Expensive items (>100):", expensive_items)
+print("Discounted prices (10% off):", discounted_prices)
