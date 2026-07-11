@@ -27,3 +27,9 @@ numbers=[1,2,3,4,5,6,8,9,10,11,12]
 
 even=list(filter(lambda x:x%2==0,numbers))
 print(even)
+
+#map function
+numbers=[1,2,3,4,5]
+square=list(map(lambda x:x*x,numbers))  #map will apply lamda fucntion to all numbers each time
+print(square)
+
