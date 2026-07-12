@@ -1,0 +1,62 @@
+while True:
+    try:
+        number=input("Enter Number:")
+        num=int(number)
+        break
+    except:
+        print("Thats not Valid number plz enter valid number:")
+
+print("Thanks for entering valid number")
+# full structed syntex
+# try:
+#     # risky code
+# except SomeError:
+#     # handle error
+# else:
+#     # runs ONLY if no error occurred
+# finally:
+#     # ALWAYS runs, error or not
+
+try:
+    number = int("abc")
+except ValueError:
+    print("That's not a valid number!")
+#error when divided by zero
+try:
+    number=10/0
+except ZeroDivisionError as z:
+    print("Error:",z)
+
+#kye not found error when accessing
+    person = {"name": "Ali"}
+try:
+    print(person["age"])
+except KeyError as k:
+    print("That key doesn't exist!")
+
+#lets try another example
+def safdivide(a,b):
+    try:
+        result=a/b
+    except ZeroDivisionError as z:
+        print("Error:",z)
+        return None
+    except TypeError:
+        print("Both value should be numbers")
+        return None
+    else:
+        return result
+print(safdivide(10,2))
+print(safdivide(10,0))
+print(safdivide(10,"a"))
+
+
+while True:
+    try:
+        age = int(input("Enter your age: "))
+        break
+    except ValueError:
+        print("Please enter a valid number, try again.")
+
+print("Your age is:", age)
+
