@@ -29,3 +29,6 @@ print(calculator.add(5,3))
 print(calculator.subtract(2,1))
 
 
+import datetime as dt
+print(dt.date.today())
+print(dt.datetime.today())
