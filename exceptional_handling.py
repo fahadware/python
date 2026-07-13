@@ -96,3 +96,16 @@ def safe_calculator():
     else:
         print("Result is:",result)
 safe_calculator()
+
+#usage in api request
+# try:
+#       response = requests.get(url, timeout=5)
+#   except requests.exceptions.Timeout:
+#       print("Request timed out, retrying...")
+#in file operation
+
+try:
+    with open("data.csv") as f:
+        data=f.read()
+except FileNotFoundError as f:
+    print("Error:",f)
