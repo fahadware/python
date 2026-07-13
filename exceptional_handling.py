@@ -60,3 +60,39 @@ while True:
 
 print("Your age is:", age)
 
+#manually raising error
+def set_age(age):
+    if age<0:
+        raise ValueError("Age can not be negative")
+    return age
+try:
+    set_age(-5)
+except ValueError as e:
+    print("Caught Error:",e)
+
+#Basic calculator example to avoid input error using try,except,raise
+def safe_calculator():
+    try:
+        num1=float(input("Enter First number"))
+        num2=float(input("Enter second number"))
+        operation=input("Enter operation(+,-,*,/)")
+        if operation=="+":
+            result=num1+num2
+        elif operation=="-":
+            result=num1-num2
+        elif operation=="*":
+            result=num1*num2
+        elif operation=="/":
+            result=num1/num2
+        else:
+            raise ValueError("Invalid Operation symbol")
+    except ValueError as e:
+        print("Error:",e)
+    except TypeError as t:
+        print("Typeerror:",e)
+
+    except ZeroDivisionError as z:
+        print("Error:",z)
+    else:
+        print("Result is:",result)
+safe_calculator()
