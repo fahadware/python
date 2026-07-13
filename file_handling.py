@@ -31,3 +31,25 @@ with open("Names.txt","r") as myfile:
     content=myfile.read()
     print(content)
 
+#word count in file
+with open("Names.txt","r") as myfile:
+    content=myfile.read()
+    word_count=len(content.split())
+    print(content)
+    print(word_count)
+
+#file handling using exceptional handling
+try:
+    with open("Mynotes.txt","r") as myfile:
+       contnet=myfile.read()
+       print(content)
+except FileNotFoundError as f:
+    print("the file does not exist")
+
+import os 
+if os.path.exists("Mynotes.txt"):
+    with open("Mynotes.txt","r") as f:
+        print(f.read())
+else:
+    print("File not found")
+
