@@ -33,3 +33,28 @@ class student(person):
 object = student("Fahad", 21, "HARMAIN")
 object.study()
 object.greet()
+
+#simple class with attribute
+class Animal:
+    def __init__(self,name,breed):
+        self.name=name
+        self.breed=breed
+    
+my_animal=Animal("Dog","German Shephard")
+print(my_animal.name)
+print(my_animal.breed)
+
+#now with method
+class Animal:
+    def __init__(self,name,breed):
+        self.name=name
+        self.breed=breed
+    def animal_sound(self):
+        print(self.name,"Says wooo")
+    
+my_animal=Animal("Dog","German Shephard")
+print(my_animal.name)
+print(my_animal.breed)
+my_animal.animal_sound()
+
+        
