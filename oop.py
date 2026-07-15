@@ -126,4 +126,38 @@ class BankAccount:
 account = BankAccount("Ali", 1000)
 account.withdraw(200)
 
+#simple libarary managment:
+class Book:
+    def __init__(self,title,author,is_availabe=True):
+        self.title=title
+        self.author=author
+        self.is_available=is_availabe
+    def borrow(self):
+        if self.is_available:
+            self.is_available=False
+            print(self.title,"Borrwoed")
+        else:
+           print("Book is not avialable")
+    def return_book(self):
+        self.is_available = True
+        print(f"'{self.title}' has been returned")
+class Ebook(Book): 
+            def __init__(self, title, author, size_mb):
+                super().__init__(title, author)
+                self.size_mb=size_mb
+            def download(self):
+             print(f"Downloading '{self.title}' ({self.size_mb}MB)")
+book1 = Book("1984", "George Orwell")
+book1.borrow()
+book1.borrow()      # try borrowing again - should show unavailable
+book1.return_book()
+
+ebook1 = Ebook("Python Basics", "Fahad Ali", 15)
+ebook1.download()
+ebook1.borrow()     # inherited method still works!
+ 
+            
+
+
+        
 
